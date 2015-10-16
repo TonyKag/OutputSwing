@@ -10,23 +10,23 @@ public class OutputSwing {
 
 	public static String inEditableArea = "in editable area";
 
-	public static String labelButton1 = "Button1";
-	public static String labelButton2 = "Button2";
-	public static String labelButton3 = "Button3";
+	public static String labelBtn1 = "Button1"; // Button's Label
+	public static String labelBtn2 = "Button2"; // Button's Label
+	public static String labelBtn3 = "Button3"; // Button's Label
 
 	public static String onTitleBar = "on title bar";
-	private static int button1DimensionX = 80;
-	private static int button1DimensionY = 25;
-	private static int button1LocationX = 200;
-	private static int button1LocationY = 200;
-	private static int button2DimensionX = 80;
-	private static int button2DimensionY = 25;
-	private static int button2LocationX = 400;
-	private static int button2LocationY = 200;
-	private static int button3DimensionX = 80;
-	private static int button3DimensionY = 25;
-	private static int button3LocationX = 600;
-	private static int button3LocationY = 200;
+	private static int btn1DimensionX = 80;
+	private static int btn1DimensionY = 25;
+	private static int btn1LocationX = 100;
+	private static int btn1LocationY = 100;
+	private static int btn2DimensionX = 80;
+	private static int btn2DimensionY = 25;
+	private static int btn2LocationX = 100;
+	private static int btn2LocationY = 150;
+	private static int btn3DimensionX = 80;
+	private static int btn3DimensionY = 25;
+	private static int btn3LocationX = 100;
+	private static int btn3LocationY = 200;
 
 	private static int frameDimensionX = 700;
 	private static int frameDimensionY = 500;
@@ -48,18 +48,12 @@ public class OutputSwing {
 				JFrame frame = new JFrame(onTitleBar);
 				// in editable area
 				JTextArea text = new JTextArea(inEditableArea);
-				// Button's Label
-				// JButton button = new JButton(onButton);
 
 				// frame.setLayout(new FlowLayout());
 				frame.setLayout(null);
 
 				frame.setPreferredSize(new Dimension(frameDimensionX, frameDimensionY));
 				frame.setLocation(frameLocationX, frameLocationY);
-
-				// frame.setLocationRelativeTo(null); // center the app
-				// frame.setSize(30, 20);
-				// frame.add(button).setSize(80, 90);
 				frame.add(text);
 				frame.pack();
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -67,23 +61,19 @@ public class OutputSwing {
 
 				// frame.setLayout(new BorderLayout());
 
-				JButton button1 = new JButton(labelButton1);
-
-				button1.setPreferredSize(new Dimension(button1DimensionX, button1DimensionY));
-				button1.setLocation(50, 10);
-				button1.setBounds(40, 100, 100, 60);
+				JButton button1 = new JButton(labelBtn1);
+				button1.setPreferredSize(new Dimension(btn1DimensionX, btn1DimensionY));
+				button1.setBounds(btn1LocationX, btn1LocationY, btn1DimensionX, btn1DimensionY);
 				frame.add(button1);
 
-				JButton button2 = new JButton(labelButton2);
-
-				button2.setPreferredSize(new Dimension(button2DimensionX, button2DimensionY));
-				button2.setBounds(80, 130, 150, 160);
+				JButton button2 = new JButton(labelBtn2);
+				button2.setPreferredSize(new Dimension(btn2DimensionX, btn2DimensionY));
+				button2.setBounds(btn2LocationX, btn2LocationY, btn2DimensionX, btn2DimensionY);
 				frame.add(button2, BorderLayout.PAGE_START);
 
-				JButton button3 = new JButton(labelButton3);
-
-				button3.setPreferredSize(new Dimension(button3DimensionX, button3DimensionY));
-				button3.setBounds(20, 300, 10, 40);
+				JButton button3 = new JButton(labelBtn3);
+				button3.setPreferredSize(new Dimension(btn3DimensionX, btn3DimensionY));
+				button3.setBounds(btn3LocationX, btn3LocationY, btn3DimensionX, btn3DimensionY);
 				frame.add(button3, BorderLayout.PAGE_START);
 
 			}
