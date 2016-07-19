@@ -30,8 +30,8 @@ public class OutputSwing {
 
 	private static int frameDimensionX = 700;
 	private static int frameDimensionY = 500;
-	private static int frameLocationX = 400;
-	private static int frameLocationY = 200;
+	private static int frameLocationX  = 400;
+	private static int frameLocationY  = 200;
 
 	public static void main(String[] args) {
 		running();
